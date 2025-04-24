@@ -1,0 +1,36 @@
+{
+  "name": "totalinete",
+  "displayName": "Totalinete",
+  "description": "Linter e formatador multilinguagem com suporte a Norminette e Object Calisthenics.",
+  "version": "0.0.1",
+  "publisher": "Eder-Santana",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Linters",
+    "Formatters"
+  ],
+  "main": "./dist/extension.js",
+  "activationEvents": [
+    "onCommand:totalinete.runLinterAndFormatter"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "totalinete.runLinterAndFormatter",
+        "title": "Totalinete: Rodar Linter e Formatador"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.86",
+    "@types/vscode": "^1.99.1",
+    "@vscode/test-web": "^0.0.68",
+    "typescript": "^5.8.3"
+  }
+}
