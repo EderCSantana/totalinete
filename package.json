@@ -5,16 +5,17 @@
   "version": "0.0.1",
   "publisher": "Eder-Santana",
   "engines": {
-    "vscode": "^1.99.0"
+    "vscode": "^1.85.0"
   },
   "categories": [
     "Linters",
     "Formatters"
   ],
   "main": "./dist/extension.js",
-  "activationEvents": [
-    "onCommand:totalinete.runLinterAndFormatter"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EderCSantana/totalinete"
+  },
   "contributes": {
     "commands": [
       {
